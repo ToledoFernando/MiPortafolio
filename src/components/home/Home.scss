@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+:root {
+  --resaltar: #f9ca10;
+}
+
+.Home{
+  color: #d3d3d3;
+
+  #gradient-canvas {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width:100%;
+    height:100%;
+    --gradient-color-1: #000000; 
+    --gradient-color-2: #0e010c; 
+    --gradient-color-3: #1a011e;  
+    --gradient-color-4: #000000;
+  }
+
+  .soy{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    .textXD{
+      color: var(--resaltar);
+      text-shadow: 0px 0px 3px var(--resaltar);
+    }
+    .nombre{
+      margin-right: 15%;
+      
+      span{
+        font-size: 20px;
+        color: var(--resaltar);
+      }
+      h1{
+        font-size: 3.5rem;
+      }
+    }
+    .img{
+      overflow: hidden;
+      margin-left: 15%;
+    }
+      .perfil{
+        width: 300px;
+        height: 300px;
+        background: url('../../../img/perfil1.png');
+        background-size: 300px;
+        transition: all 0.5s;
+        border-radius: 4px;
+        position: relative;
+        border: 0;
+        
+        .hoverAdv{
+          color: #ffffff24;
+          margin: 5px;
+          transition: all 0.3s;
+          animation: hoverAdv 1s infinite alternate;
+        }
+        @keyframes hoverAdv {
+          0%{
+            color: #ffffff24;
+          }
+          60%{
+            color: #ffffff39;
+          }
+        }
+        
+        p{
+          opacity: 0;
+          position: absolute;
+          top: 20px;
+          opacity: 0;
+          left: -100%;
+          transition: all 0.5s;
+          font-size: 25px;
+        }
+
+        .contact{
+          display: flex;
+          flex-direction: column;
+          font-size: 17px;
+          width: max-content;
+          height: 80%;
+          justify-content: end;
+          position: absolute;
+          left: -100%;
+          transition: all 0.8s;
+
+          div{
+            display: flex;
+            align-items: center;
+            filter: grayscale(100%);
+            transition: all 0.2s;
+            a{
+              text-decoration: none;
+              color: #3a3a3a;
+            }
+            &:hover{
+              filter: grayscale(0%);
+              a{
+                color: #7e7e7e;
+                font-weight: 0;
+              }
+            }
+          }
+
+          img{
+            width: 25px;
+            margin: 8px 5px;
+          }
+        }
+
+        &:hover{
+          background: url('../../../img/perfil1.png') left center no-repeat;
+          background-size: 550px;
+          border: 1px solid #9e9e9e7b;
+          .hoverAdv{
+            opacity: 0;
+          }
+          p{
+            left: 10px;
+            opacity: 1;
+          }
+          .contact{
+            left: 5px;
+            
+          }
+          
+        }
+      }
+      
+    }
+}
