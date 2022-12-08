@@ -8,3 +8,23 @@ body{
   background-position-x: 7rem;
   background-attachment: fixed;
 }
+
+body::-webkit-scrollbar{
+  -webkit-appearance: none;
+}
+body::-webkit-scrollbar{
+  background-color: #282424;
+}
+body::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #989898;
+  border-radius: 20px;
+  border: 0;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
