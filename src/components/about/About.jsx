@@ -3,16 +3,48 @@ import LinkedIn from "../../../img/svg/linkedin-svgrepo-com.svg";
 import GitHub from "../../../img/svg/github-svgrepo-com.svg";
 import Gmail from "../../../img/svg/gmail-svgrepo-com.svg";
 import Typed from "typed.js";
+import { addObserver } from "./aboutObserver";
 import "./About.scss";
 
 function About() {
   const yo = useRef();
+  const miInfo = useRef();
+  const techSkill = useRef();
+  const softSkill = useRef();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    addObserver(yo.current);
+    addObserver(miInfo.current);
+
+    new Typed(techSkill.current, {
+      strings: [
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "ReactJS",
+        "Redux",
+        "NodeJS",
+        "Express",
+        "PostgreSQL",
+        "Sequelize",
+      ],
+      typeSpeed: 70,
+      backSpeed: 60,
+      backDelay: 500,
+      loop: true,
+    });
+    new Typed(softSkill.current, {
+      strings: [" Dedicación", "Cooperación", "Responsabilidad", " Escucha"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 500,
+      loop: true,
+    });
+  }, []);
 
   return (
     <div className="about">
-      <div className="img">
+      <div ref={yo} className="img obs">
         <div className="perfil">
           <p>Mis Redes</p>
           <label className="hoverAdv">Hover</label>
@@ -45,7 +77,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="informacion">
+      <div ref={miInfo} className="informacion obs2">
         <p>
           Me llamo <span className="res">Fernando Toledo</span>
         </p>
@@ -60,6 +92,28 @@ function About() {
           la programacion y siempre estoy buscando{" "}
           <span className="res">aprender mas</span>...
         </p>
+        <div className="skills">
+          <div className="tech">
+            <label>Tech Skills:</label>
+            <label>
+              {" "}
+              - <span className="res" ref={techSkill}></span>
+            </label>
+          </div>
+          <div className="soft">
+            <label>Soft Skills:</label>
+            <label>
+              {" "}
+              - <span className="res" ref={softSkill}></span>
+            </label>
+          </div>
+        </div>
+        <a
+          className="cv"
+          href="https://drive.google.com/file/d/19tEhh0nnvXpCAnTzDxyansZgvdBFXl9p/view?usp=sharing"
+        >
+          Descargar CV
+        </a>
       </div>
     </div>
   );

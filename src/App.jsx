@@ -1,6 +1,6 @@
-import NavBar from "./components/navbar/NavBar";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
+import NavBar from "./components/navbar/NavBar.jsx";
+import Home from "./components/home/Home.jsx";
+import About from "./components/about/About.jsx";
 import { useEffect, useRef } from "react";
 
 function App() {
@@ -19,11 +19,13 @@ function App() {
   });
 
   return (
-    <div>
+    <>
       <NavBar />
-      <Home mov={xd} />
-      <About />
-    </div>
+      <main>
+        <Home mov={xd} />
+        <About />
+      </main>
+    </>
   );
 }
 
