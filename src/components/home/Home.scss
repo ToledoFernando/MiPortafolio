@@ -11,7 +11,7 @@
     position: fixed;
     top: 0;
     z-index: -1;
-    width: 100%;
+    // width: 100%;
     height: 100%;
     --gradient-color-1: #000000;
     --gradient-color-2: #0e010c;
@@ -24,16 +24,15 @@
     font-weight: 900;
     font-size: 20px;
     display: flex;
+    justify-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: max-content;
     margin: auto;
     margin-top: 12%;
 
     .img2 {
-      // background-color: #42424239;
       padding: 20px;
-      // filter: hue-rotate(50deg);
       filter: grayscale(70%);
       transition: all 0.3s;
       img {
@@ -50,7 +49,7 @@
     }
     .nombre {
       padding: 30px 20px;
-      margin-right: 15%;
+      // margin-right: 15%;
 
       span {
         font-size: 20px;
