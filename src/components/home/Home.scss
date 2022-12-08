@@ -14,9 +14,14 @@
     z-index: -1;
     height: 100%;
     --gradient-color-1: #000000;
-    --gradient-color-2: #0e010c;
-    --gradient-color-3: #1a011e;
+    --gradient-color-2: #060629;
+    --gradient-color-3: #2e0535;
     --gradient-color-4: #000000;
+
+    // --gradient-color-1: #913a3a;
+    // --gradient-color-2: #dbadd4;
+    // --gradient-color-3: #ca0de7;
+    // --gradient-color-4: #15dc18;
   }
 
   .soy {
@@ -26,7 +31,8 @@
     justify-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 80%;
+    // max-width: 80%;
+    padding: 0 9%;
     margin: auto;
     margin-top: 12%;
 
@@ -82,6 +88,13 @@
       p {
         color: #fff;
       }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .soy {
+      justify-content: center;
+      padding: 0;
     }
   }
 }

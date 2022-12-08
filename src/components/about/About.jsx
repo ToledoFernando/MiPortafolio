@@ -47,7 +47,18 @@ function About() {
       </div>
       <div className="informacion">
         <p>
-          Me llamo <span>Fernando Toledo</span>
+          Me llamo <span className="res">Fernando Toledo</span>
+        </p>
+        <p>
+          Tengo 20 años, me inicie en la programacion a los 18 años, comenze de
+          forma <span className="res">autodidacta</span> con tecnologias como
+          HTML5, CSS3, PHP, Ajax y MySQL. Actualmente me encuentro en la etapa
+          final del bootcamp de <span className="res">SoyHenry</span> en el que
+          me recibo como <span className="res">FullStack - Developer</span>.
+          Tengo conocimientos en tecnologias de desarrollo web con Javascript,
+          NodeJS, Express, PostgreSQL y Sequelize. <br /> Me gusta la
+          programacion y siempre estoy buscando{" "}
+          <span className="res">aprender mas</span>...
         </p>
       </div>
     </div>
