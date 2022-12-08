@@ -46,6 +46,9 @@ function Home(props) {
           <img ref={props.mov} data-value="3" src={logoPC} alt="" />
         </div>
       </div>
+      <div className="sobre">
+        <p>Sobre Mi</p>
+      </div>
     </div>
   );
 }
