@@ -20,10 +20,16 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <header>
+        <NavBar />
+      </header>
       <main>
-        <Home mov={xd} />
-        <About />
+        <article>
+          <Home mov={xd} />
+        </article>
+        <article>
+          <About />
+        </article>
       </main>
     </>
   );

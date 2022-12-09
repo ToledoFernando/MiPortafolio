@@ -2,16 +2,51 @@
 
 .about {
   font-family: "Kanit", sans-serif;
-  display: flex;
   padding: 5% 0;
-  justify-content: center;
-  align-items: center;
   color: #fff;
   width: 100%;
   margin: auto;
   margin-top: 15%;
   margin-bottom: 15%;
   background-color: #000;
+
+  section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .tech {
+      width: 100%;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 900;
+      margin-top: 90px;
+      margin-bottom: 30px;
+    }
+    .tech_Skills {
+      width: 70%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        img {
+          filter: grayscale(100%);
+          width: 60px;
+          transition: all 0.5s;
+          position: relative;
+
+          &:hover {
+            transform: scale(1.2);
+            filter: grayscale(0);
+          }
+        }
+      }
+    }
+  }
 
   .img {
     overflow: hidden;
@@ -125,6 +160,11 @@
     opacity: 100%;
     transition: all 1s;
 
+    p {
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+    }
     .res {
       background: linear-gradient(to bottom right, #ffff02, #ff9500);
       -webkit-background-clip: text;
@@ -133,19 +173,6 @@
       text-shadow: 0px 0px 0.5px #ffff02;
     }
 
-    .skills {
-      display: flex;
-      justify-content: space-between;
-      justify-content: space-around;
-      margin-bottom: 20px;
-      margin: 10px 0 20px;
-      div {
-        width: 44%;
-        // max-width: 400px;
-        display: flex;
-        flex-direction: column;
-      }
-    }
     .cv {
       background: linear-gradient(to bottom right, #ffff02, #ff9500);
       text-decoration: none;
