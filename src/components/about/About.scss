@@ -7,7 +7,6 @@
   width: 100%;
   margin: auto;
   margin-top: 15%;
-  margin-bottom: 15%;
   background-color: #000;
 
   section {
@@ -19,9 +18,9 @@
     .tech {
       width: 100%;
       text-align: center;
-      font-size: 25px;
+      font-size: 40px;
       font-weight: 900;
-      margin-top: 90px;
+      margin-top: 50px;
       margin-bottom: 50px;
     }
     .tech_Skills {
@@ -173,7 +172,8 @@
           opacity: 1;
         }
         .contact {
-          left: 10px;
+          left: 15px;
+          bottom: 30px;
         }
       }
     }
