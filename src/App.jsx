@@ -2,6 +2,7 @@ import NavBar from "./components/navbar/NavBar.jsx";
 import Home from "./components/home/Home.jsx";
 import About from "./components/about/About.jsx";
 import Proyects from "./components/proyects/Proyects.jsx";
+import Contact from "./components/contact/Contact";
 import { useEffect, useRef } from "react";
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
           <Proyects />
         </article>
       </main>
+      <footer>
+        <Contact />
+      </footer>
     </>
   );
 }
