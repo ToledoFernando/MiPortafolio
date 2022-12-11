@@ -81,17 +81,30 @@ function About() {
       <section>
         <p className="tech">Tech Skills</p>
         <div className="tech_Skills">
-          <div>
+          <div className="frontEnd">
+            <div>
+              <p>Front-End</p>
+            </div>
             <img src={html} alt="" />
             <img src={css} alt="" />
             <img src={sass} alt="" />
             <img src={js} alt="" />
             <img src={reactJS} alt="" />
             <img src={redux} alt="" />
+          </div>
+          <div className="backEnd">
+            <div>
+              <p>Back-End</p>
+            </div>
             <img src={nodejs} alt="" />
             <img src={express} alt="" />
             <img src={pgsql} alt="" />
             <img src={sequelize} alt="" />
+          </div>
+          <div className="otros">
+            <div>
+              <p>Otros</p>
+            </div>
             <img src={git} alt="" />
           </div>
         </div>
