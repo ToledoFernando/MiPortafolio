@@ -1,7 +1,7 @@
 import NavBar from "./components/navbar/NavBar.jsx";
 import Home from "./components/home/Home.jsx";
 import About from "./components/about/About.jsx";
-import Proyects from "./components/proyects/proyects.jsx";
+import Proyects from "./components/proyects/Proyects.jsx";
 import { useEffect, useRef } from "react";
 
 function App() {

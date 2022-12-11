@@ -1,7 +1,7 @@
 import React from "react";
 
-function proyects() {
-  return <div>proyects</div>;
+function Proyects() {
+  return <div>Proyects</div>;
 }
 
-export default proyects;
+export default Proyects;
