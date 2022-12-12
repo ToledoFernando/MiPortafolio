@@ -30,10 +30,18 @@ function NavBar() {
       </div>
       <div className={active ? "menuAv" : "opt"}>
         <ul>
-          <li>Inicio</li>
-          <li>About</li>
-          <li>Proyectos</li>
-          <li>Contacto</li>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#Proyectos">Proyectos</a>
+          </li>
+          <li>
+            <a href="#Contacto">Contacto</a>
+          </li>
         </ul>
       </div>
     </nav>

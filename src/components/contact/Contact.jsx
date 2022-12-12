@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div>
+    <div id="Contacto">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam
       quo doloribus sapiente excepturi earum inventore eius, culpa explicabo
       possimus temporibus ab ratione quod, in dolorum tenetur itaque modi dolor

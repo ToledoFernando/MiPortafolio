@@ -6,6 +6,7 @@ import Pi from "../../../img/proyectos/pi.png";
 import generatos from "../../../img/proyectos/generator.png";
 import rym from "../../../img/proyectos/rick and morty.png";
 import portafolio from "../../../img/proyectos/MiPortafolio.png";
+import typed from "typed.js";
 
 //==========================================//
 import css from "../../../img/svg/css.svg";
@@ -20,37 +21,41 @@ import js from "../../../img/svg/js.svg";
 import bootstrap from "../../../img/svg/bootstrap-4.svg";
 import git from "../../../img/svg/git.svg";
 import html from "../../../img/svg/html.svg";
+import newW from "../../../img/svg/new.svg";
+import github from "../../../img/svg/github-svgrepo-com.svg";
 
 function Proyects() {
   const proyectos = React.useRef();
-  const right = React.useRef();
-  const left = React.useRef();
+  const rp = React.useRef();
 
   React.useEffect(() => {
-    newObserver(proyectos.current);
+    new typed(rp.current, {
+      strings: ["Realice", "Participe"],
+      typeSpeed: 120,
+      backSpeed: 70,
+      backDelay: 1000,
+      loop: true,
+    });
   }, []);
 
   return (
-    <div ref={proyectos} className="proyects">
-      <span ref={left} className="left"></span>
-      <span ref={right} className="right"></span>
+    <div ref={proyectos} className="proyects" id="Proyectos">
       <div className="contenedorProyectos">
-        <p className="tit">Algunos que Realize/Participe (Falta estilizar )</p>
+        <p className="tit">
+          Algunos que <span ref={rp} className="res"></span>{" "}
+        </p>
         <div className="proyectos">
           <div className="proyecto">
-            <img src={Hostel} alt="" width={"300px"} />
+            <img src={Hostel} alt="" className="imgProyecto" />
             <div className="infoP">
               <p className="tituloP">PF - Dinamita Hostel</p>
               <p className="description">
-                Proyecto final del Bootcamp{" "}
+                Proyecto final/Grupal del Bootcamp{" "}
                 <span className="res">SoyHenry</span> en donde trabaje junto a
-                otros 6 desarrolladores <span className="res">FullStack</span>,
-                la aplicacion consiste en una pagina de reserva de habitaciones,
-                contiene su propio <span className="res">Dashboard</span> para
-                el administrador...
+                otros 6 desarrolladores <span className="res">FullStack</span>
               </p>
               <div>
-                <p>Tecnologias que se uso</p>
+                <p>Tecnologias</p>
                 <div className="tecnologias">
                   <img src={js} alt="Javascript" />
                   <img src={bootstrap} alt="Bootstrap" />
@@ -64,17 +69,29 @@ function Proyects() {
                 </div>
               </div>
             </div>
+            <div className="abrirRepo">
+              <a href="https://hostel-project.vercel.app/" target="_blank">
+                <img src={newW} alt="deploy" />
+              </a>
+              <a
+                href="https://github.com/kripto-c/HostelProject"
+                target="_blank"
+              >
+                <img src={github} alt="github" />
+              </a>
+            </div>
           </div>
+
           <div className="proyecto">
-            <img src={portafolio} alt="MiPortafolio" width={"300px"} />
+            <img src={portafolio} alt="MiPortafolio" className="imgProyecto" />
             <div className="infoP">
               <p className="tituloP">Mi Portafolio</p>
               <p className="description">
-                Mi Portafolio en el que siguo trabajando y actualizo
-                constantemente :D
+                <span className="res">Mi Portafolio</span> en el que sigo
+                trabajando y actualizo constantemente...
               </p>
+              <p>Tecnologias</p>
               <div className="tecnologias">
-                <p>Tecnologias que se uso</p>
                 <img src={html} alt="html5" />
                 <img src={css} alt="Css3" />
                 <img src={sass} alt="Sass" />
@@ -82,23 +99,28 @@ function Proyects() {
                 <img src={reactJS} alt="ReactJS" />
               </div>
             </div>
+            <div className="abrirRepo">
+              <a href="https://ftoledo.online/" target="_blank">
+                <img src={newW} alt="deploy" />
+              </a>
+              <a
+                href="https://github.com/ToledoFernando/MiPortafolio"
+                target="_blank"
+              >
+                <img src={github} alt="github" target="_blank" />
+              </a>
+            </div>
           </div>
+
           <div className="proyecto">
-            <img src={Pi} alt="" width={"300px"} />
+            <img src={Pi} alt="" className="imgProyecto" />
             <div className="infoP">
               <p className="tituloP">PI - Proyecto individual</p>
               <p className="description">
-                Proyecto individual realizado en el Bootcamp{" "}
-                <span className="res">SoyHenry</span>, consiste en una
-                aplicacion en la cual podemos ver diferentes tipos de recetas,
-                se puede filtrar por nombre, tipo de dieta y puntaje de salud,
-                tambien posee su propio <span className="res">SearchBar</span>{" "}
-                para la busqueda de receta. Tambien permite la creacion de
-                recetas nuevas que se guardan en una base de datos de{" "}
-                <span className="res">Postgres</span>
+                Una App que muestra diferentes tipos de recetas
               </p>
               <div>
-                <p>Tecnologias que se uso</p>
+                <p>Tecnologias</p>
                 <div className="tecnologias">
                   <img src={js} alt="Javascript" />
                   <img src={reactJS} alt="React" />
@@ -110,43 +132,82 @@ function Proyects() {
                 </div>
               </div>
             </div>
+            <div className="abrirRepo">
+              <a
+                href="https://github.com/ToledoFernando/HenryFood"
+                target="_blank"
+              >
+                <img src={github} alt="github" target="_blank" />
+              </a>
+            </div>
           </div>
+
           <div className="proyecto">
-            <img src={rym} alt="RickAndMorty Proyecto React" width={"300px"} />
+            <img
+              src={rym}
+              alt="RickAndMorty Proyecto React"
+              className="imgProyecto"
+            />
             <div className="infoP">
               <p className="tituloP">App Rick y Morty</p>
               <p className="description">
-                Una Aplicacion web consumiendo la{" "}
-                <span className="res">API</span> de Rick y Morty para poder ver
-                informacion de Personajes, Capitulos y/o Episodios
+                Una App utilizando <span className="res">API</span> de Rick y
+                Morty
               </p>
               <div>
-                <p>Tecnologias que se uso</p>
+                <p>Tecnologias</p>
                 <div className="tecnologias">
+                  <img src={html} alt="html" />
                   <img src={css} alt="css" />
                   <img src={reactJS} alt="react" />
                   <img src={js} alt="Javascript" />
                 </div>
               </div>
             </div>
+            <div className="abrirRepo">
+              <a href="https://rick-y-morty-prueba.vercel.app/" target="_blank">
+                <img src={newW} alt="deploy" />
+              </a>
+              <a
+                href="https://github.com/ToledoFernando/Rick-y-Morty_Prueba"
+                target="_blank"
+              >
+                <img src={github} alt="github" target="_blank" />
+              </a>
+            </div>
           </div>
+
           <div className="proyecto">
-            <img src={generatos} alt="" width={"300px"} />
+            <img src={generatos} alt="" className="imgProyecto" />
             <div className="infoP">
               <p className="tituloP">Generador de contraseña</p>
               <p className="description">
-                Generador de contraseña, permite un minimo de 8 y un maximo de
-                30 caracteres, da opcion para incluir numero, mayusculas y
-                simbolos especiales.
+                Generador de contraseña de <span className="res">8 a 30</span>{" "}
+                digitos
               </p>
               <div>
-                <p>Tecnologias que se uso</p>
+                <p>Tecnologias</p>
                 <div className="tecnologias">
+                  <img src={html} alt="html" />
                   <img src={css} alt="css" />
                   <img src={reactJS} alt="react" />
                   <img src={js} alt="Javascript" />
                 </div>
               </div>
+            </div>
+            <div className="abrirRepo">
+              <a
+                href="https://generator-password-zeta.vercel.app/"
+                target="_blank"
+              >
+                <img src={newW} alt="deploy" />
+              </a>
+              <a
+                href="https://github.com/ToledoFernando/GeneratorPassword"
+                target="_blank"
+              >
+                <img src={github} alt="github" target="_blank" />
+              </a>
             </div>
           </div>
         </div>
