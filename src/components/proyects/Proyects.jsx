@@ -42,7 +42,7 @@ function Proyects() {
     <div ref={proyectos} className="proyects" id="Proyectos">
       <div className="contenedorProyectos">
         <p className="tit">
-          Algunos que <span ref={rp} className="res"></span>{" "}
+          Algunos Proyectos que <span ref={rp} className="res"></span>{" "}
         </p>
         <div className="proyectos">
           <div className="proyecto">
