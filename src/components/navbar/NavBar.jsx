@@ -31,16 +31,24 @@ function NavBar() {
       <div className={active ? "menuAv" : "opt"}>
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <a href="#" onClick={() => setActive(false)}>
+              Inicio
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about" onClick={() => setActive(false)}>
+              About
+            </a>
           </li>
           <li>
-            <a href="#Proyectos">Proyectos</a>
+            <a href="#Proyectos" onClick={() => setActive(false)}>
+              Proyectos
+            </a>
           </li>
           <li>
-            <a href="#Contacto">Contacto</a>
+            <a href="#Contacto" onClick={() => setActive(false)}>
+              Contacto
+            </a>
           </li>
         </ul>
       </div>
