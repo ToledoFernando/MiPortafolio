@@ -3,6 +3,7 @@ import Home from "./components/home/Home.jsx";
 import About from "./components/about/About.jsx";
 import Proyects from "./components/proyects/Proyects.jsx";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 import { useEffect, useRef } from "react";
 
 function App() {
@@ -35,9 +36,12 @@ function App() {
         <article>
           <Proyects />
         </article>
+        <article>
+          <Contact />
+        </article>
       </main>
       <footer>
-        <Contact />
+        <Footer />
       </footer>
     </>
   );

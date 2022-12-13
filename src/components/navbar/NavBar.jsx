@@ -37,7 +37,7 @@ function NavBar() {
           </li>
           <li>
             <a href="#about" onClick={() => setActive(false)}>
-              About
+              Sobre Mi
             </a>
           </li>
           <li>

@@ -117,7 +117,8 @@ function Proyects() {
             <div className="infoP">
               <p className="tituloP">PI - Proyecto individual</p>
               <p className="description">
-                Una App que muestra diferentes tipos de recetas
+                Una <span className="res">App</span> que muestra diferentes
+                tipos de recetas
               </p>
               <div>
                 <p>Tecnologias</p>

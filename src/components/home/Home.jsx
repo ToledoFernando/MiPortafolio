@@ -47,7 +47,9 @@ function Home(props) {
         </div>
       </div>
       <div className="sobre">
-        <p>Sobre Mi</p>
+        <p>
+          <a href="#about">Sobre Mi</a>
+        </p>
       </div>
     </div>
   );
