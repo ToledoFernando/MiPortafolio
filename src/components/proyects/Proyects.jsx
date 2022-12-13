@@ -213,6 +213,7 @@ function Proyects() {
           </div>
         </div>
       </div>
+      <div className="shadow"></div>
     </div>
   );
 }

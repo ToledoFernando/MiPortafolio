@@ -3,6 +3,12 @@ import github from "../../../img/svg/github-svgrepo-com.svg";
 import linkedind from "../../../img/svg/linkedin-svgrepo-com.svg";
 import "./Contact.scss";
 
+const initial = {
+  nombre: "",
+  apellido: "",
+  email: "",
+};
+
 function Contact() {
   const [datos, setDatos] = React.useState({});
 
@@ -35,16 +41,27 @@ function Contact() {
         </a>
       </div>
       <form>
-        <input type="text" placeholder="Nombre y Apellido" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Numero de Contacto (No obligatorio)" />
-        <textarea
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Mensaje"
-        ></textarea>
-        <input type="submit" value="Enviar" />
+        <span className="span">
+          <input type="text" placeholder="Nombre y Apellido*" />
+        </span>
+        <span className="span">
+          <input type="text" placeholder="Email*" />
+        </span>
+        <span className="span">
+          <input
+            type="text"
+            placeholder="Numero de Contacto (No obligatorio)"
+          />
+        </span>
+        <span className="span textarea">
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Mensaje*"
+          ></textarea>
+        </span>
+        <input type="submit" className="enviar" value="Enviar" />
       </form>
     </div>
   );
