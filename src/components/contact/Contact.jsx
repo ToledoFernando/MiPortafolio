@@ -4,6 +4,7 @@ import linkedind from "../../../img/svg/linkedin-svgrepo-com.svg";
 import "./Contact.scss";
 import cargando from "../../../img/svg/cargando.svg";
 import emailjs from "@emailjs/browser";
+import { newObserver } from "./observer";
 
 const initial = {
   to_name: "",
@@ -18,6 +19,8 @@ function Contact() {
 
   const fail = React.useRef();
   const ok = React.useRef();
+
+  const formulario = React.useRef();
 
   const [error, setError] = React.useState({
     to_name: true,
@@ -86,6 +89,10 @@ function Contact() {
     e.target.parentElement.className += " cerrarAlerta";
   };
 
+  React.useEffect(() => {
+    newObserver(formulario.current);
+  }, []);
+
   return (
     <div className="contacto" id="Contacto">
       <div ref={ok} className="cerrarAlerta AlertaOk">
@@ -132,7 +139,7 @@ function Contact() {
           Contactarme por WhatsApp
         </a>
       </div>
-      <form onSubmit={xd}>
+      <form onSubmit={xd} ref={formulario} className="form">
         <span className="span">
           <input
             autoComplete="off"

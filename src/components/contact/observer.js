@@ -1,7 +1,7 @@
 const view = (entrada, observador) => {
   if (entrada[0].isIntersecting) {
-    entrada[0].target.childNodes[0].className = 'leftM'
-    entrada[0].target.childNodes[1].className = 'rightM'
+    entrada[0].target.style.transform = `translateX(0)`;
+    entrada[0].target.style.opacity = `100%`;
   }
 }
 const observer = new IntersectionObserver(view, {

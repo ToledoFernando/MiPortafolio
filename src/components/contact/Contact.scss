@@ -9,6 +9,12 @@
   position: relative;
   overflow: hidden;
 
+  .form {
+    transform: translateX(-150px);
+    opacity: 0%;
+    transition: all 1s;
+  }
+
   .AlertaOk {
     display: flex;
     position: absolute;
@@ -203,6 +209,10 @@
   @media only screen and (max-width: 630px) {
     form {
       margin-top: 30px;
+    }
+    .form {
+      transform: translateX(0);
+      opacity: 100%;
     }
   }
 }

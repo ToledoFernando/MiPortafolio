@@ -1,5 +1,4 @@
 import React from "react";
-import { newObserver } from "./observer";
 import "./proyects.scss";
 import Hostel from "../../../img/proyectos/dinamitaHostelProyect.png";
 import Pi from "../../../img/proyectos/pi.png";

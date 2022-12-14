@@ -33,23 +33,27 @@ function Home(props) {
         data-js-darken-top
         data-transition-in
       />
-      <div className="soy">
-        <div className="nombre">
+      <div className="back">
+        <div className="soy">
+          <div className="nombre">
+            <p>
+              <span className="textXD">Bienvenido</span>, mi nombre es
+            </p>
+            <h1>Fernando Toledo</h1>
+            <label>Soy </label>
+            <label className="textXD" ref={fullStack}></label>
+          </div>
+          <div className="img2">
+            <img ref={props.mov} data-value="3" src={logoPC} alt="" />
+          </div>
+        </div>
+        <div className="sobre">
           <p>
-            <span className="textXD">Bienvenido</span>, mi nombre es
+            <a id="sobreMi" href="#about">
+              Sobre Mi
+            </a>
           </p>
-          <h1>Fernando Toledo</h1>
-          <label>Soy </label>
-          <label className="textXD" ref={fullStack}></label>
         </div>
-        <div className="img2">
-          <img ref={props.mov} data-value="3" src={logoPC} alt="" />
-        </div>
-      </div>
-      <div className="sobre">
-        <p>
-          <a href="#about">Sobre Mi</a>
-        </p>
       </div>
     </div>
   );
