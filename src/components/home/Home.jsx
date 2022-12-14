@@ -60,7 +60,7 @@ function Home(props) {
               ref={props.mov}
               data-value="3"
               src={logoPC}
-              alt=""
+              alt="laptop"
             />
           </div>
         </div>
