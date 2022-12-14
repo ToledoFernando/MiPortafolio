@@ -1,10 +1,10 @@
 import React from "react";
 import github from "../../../img/svg/github-svgrepo-com.svg";
 import linkedind from "../../../img/svg/linkedin-svgrepo-com.svg";
-import "./Contact.scss";
 import cargando from "../../../img/svg/cargando.svg";
 import emailjs from "@emailjs/browser";
 import { newObserver } from "./observer";
+import "./Contact.scss";
 
 const initial = {
   to_name: "",
@@ -32,7 +32,7 @@ function Contact() {
     try {
       e.preventDefault();
       setLoad(true);
-      const response = await emailjs.send(
+      await emailjs.send(
         import.meta.env.VITE_SERVICE,
         import.meta.env.VITE_TEMPLATE,
         datos,

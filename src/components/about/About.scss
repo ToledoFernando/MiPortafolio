@@ -84,7 +84,8 @@
     .perfil {
       width: 300px;
       height: 300px;
-      background: url("../../../img/perfil2.jpg") center center no-repeat;
+      background: url("https://firebasestorage.googleapis.com/v0/b/imgs-b915c.appspot.com/o/perfil2.jpg?alt=media&token=da2387d9-496c-4db4-a19a-da6aa88d49e6")
+        center center no-repeat;
       background-size: 300px;
       transition: all 0.5s;
       border-radius: 4px;
@@ -137,7 +138,9 @@
           &:hover {
             filter: grayscale(0%);
             a {
-              color: #7e7e7e;
+              text-shadow: 0px 0px 13px #fff;
+              color: #d1cfcf;
+              // color: #7e7e7e;
               font-weight: 0;
             }
           }
@@ -150,8 +153,10 @@
       }
 
       &:hover {
-        background: url("../../../img/perfil3.jpg") left center no-repeat;
+        background: url("https://firebasestorage.googleapis.com/v0/b/imgs-b915c.appspot.com/o/perfil3.jpg?alt=media&token=4f72abd9-fb18-4aab-9acb-0fc42e566b99")
+          left center no-repeat;
         background-size: 550px;
+
         &::before {
           position: absolute;
           content: "";

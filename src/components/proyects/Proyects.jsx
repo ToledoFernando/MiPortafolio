@@ -1,10 +1,5 @@
 import React from "react";
 import "./proyects.scss";
-import Hostel from "../../../img/proyectos/dinamitaHostelProyect.png";
-import Pi from "../../../img/proyectos/pi.png";
-import generatos from "../../../img/proyectos/generator.png";
-import rym from "../../../img/proyectos/rick and morty.png";
-import portafolio from "../../../img/proyectos/MiPortafolio.png";
 import typed from "typed.js";
 
 //==========================================//
@@ -45,7 +40,11 @@ function Proyects() {
         </p>
         <div className="proyectos">
           <div className="proyecto">
-            <img src={Hostel} alt="" className="imgProyecto" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/imgs-b915c.appspot.com/o/dinamitaHostelProyect.png?alt=media&token=e2f64f9a-04d3-4e5c-b177-f24db6420505"
+              alt=""
+              className="imgProyecto"
+            />
             <div className="infoP">
               <p className="tituloP">PF - Dinamita Hostel</p>
               <p className="description">
@@ -82,7 +81,11 @@ function Proyects() {
           </div>
 
           <div className="proyecto">
-            <img src={portafolio} alt="MiPortafolio" className="imgProyecto" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/imgs-b915c.appspot.com/o/MiPortafolio.png?alt=media&token=79c44c0f-7feb-4691-9448-15519915ab84"
+              alt="MiPortafolio"
+              className="imgProyecto"
+            />
             <div className="infoP">
               <p className="tituloP">Mi Portafolio</p>
               <p className="description">
@@ -112,7 +115,11 @@ function Proyects() {
           </div>
 
           <div className="proyecto">
-            <img src={Pi} alt="" className="imgProyecto" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/imgs-b915c.appspot.com/o/pi.png?alt=media&token=247bcaa2-37f4-43a6-9274-2f7415ce3bad"
+              alt=""
+              className="imgProyecto"
+            />
             <div className="infoP">
               <p className="tituloP">PI - Proyecto individual</p>
               <p className="description">
@@ -144,7 +151,7 @@ function Proyects() {
 
           <div className="proyecto">
             <img
-              src={rym}
+              src="https://firebasestorage.googleapis.com/v0/b/imgs-b915c.appspot.com/o/rick%20and%20morty.png?alt=media&token=26338eae-9f01-4f0e-b0e8-f545f0221bd1"
               alt="RickAndMorty Proyecto React"
               className="imgProyecto"
             />
@@ -178,7 +185,11 @@ function Proyects() {
           </div>
 
           <div className="proyecto">
-            <img src={generatos} alt="" className="imgProyecto" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/imgs-b915c.appspot.com/o/generator.png?alt=media&token=e826e37e-e2a1-4763-bda7-e8e53d0ceb2f"
+              alt=""
+              className="imgProyecto"
+            />
             <div className="infoP">
               <p className="tituloP">Generador de contraseña</p>
               <p className="description">

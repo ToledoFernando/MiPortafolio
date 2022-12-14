@@ -7,9 +7,9 @@ function NavBar() {
 
   React.useEffect(() => {
     window.addEventListener("scroll", (e) => {
-      if (Math.round(e.srcElement.scrollingElement.scrollTop) > 30)
+      if (Math.round(e.target.scrollingElement.scrollTop) > 30)
         navBar.current.setAttribute("style", "background-color: #000");
-      if (Math.round(e.srcElement.scrollingElement.scrollTop) < 30)
+      if (Math.round(e.target.scrollingElement.scrollTop) < 30)
         navBar.current.setAttribute("style", "background-color: #00000000");
     });
   });

@@ -14,6 +14,7 @@ import sequelize from "../../../img/svg/sequelize.svg";
 import html from "../../../img/svg/html.svg";
 import js from "../../../img/svg/js.svg";
 import git from "../../../img/svg/git.svg";
+import scrum from "../../../img/scrum.png";
 
 import "./About.scss";
 
@@ -85,27 +86,28 @@ function About() {
             <div>
               <p>Front-End</p>
             </div>
-            <img src={html} alt="" />
-            <img src={css} alt="" />
-            <img src={sass} alt="" />
-            <img src={js} alt="" />
-            <img src={reactJS} alt="" />
-            <img src={redux} alt="" />
+            <img src={html} alt="html" title="HTML5" />
+            <img src={css} alt="css" title="CSS3" />
+            <img src={sass} alt="sass" title="sass" />
+            <img src={js} alt="javascript" title="Javascript" />
+            <img src={reactJS} alt="reactJS" title="ReactJS" />
+            <img src={redux} alt="redux" title="Redux" />
           </div>
           <div className="backEnd">
             <div>
               <p>Back-End</p>
             </div>
-            <img src={nodejs} alt="" />
-            <img src={express} alt="" />
-            <img src={pgsql} alt="" />
-            <img src={sequelize} alt="" />
+            <img src={nodejs} alt="NodeJS" title="NodeJS" />
+            <img src={express} alt="Express" title="Express" />
+            <img src={pgsql} alt="PostgreSQL" title="PostgreSQL" />
+            <img src={sequelize} alt="Sequelize" title="Sequelize" />
           </div>
           <div className="otros">
             <div>
               <p>Otros</p>
             </div>
-            <img src={git} alt="" />
+            <img src={git} alt="Git" title="Git" />
+            <img src={scrum} alt="Scrum" title="scrum" />
           </div>
         </div>
       </section>
