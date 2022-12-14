@@ -4,6 +4,12 @@ import { Gradient } from "../gradient";
 import logoPC from "../../../img/pngLap.png";
 import "./Home.scss";
 
+import express from "../../../img/svg/express.svg";
+import nodejs from "../../../img/svg/nodejs.svg";
+import reactJS from "../../../img/svg/reactjs.svg";
+import redux from "../../../img/svg/redux.svg";
+import js from "../../../img/svg/js.svg";
+
 // Create your instance
 const gradient = new Gradient();
 
@@ -44,7 +50,18 @@ function Home(props) {
             <label className="textXD" ref={fullStack}></label>
           </div>
           <div className="img2">
-            <img ref={props.mov} data-value="3" src={logoPC} alt="" />
+            <img src={js} alt="Javascript" className="iconoIMG" />
+            <img src={reactJS} alt="reactJS" className="iconoIMG" />
+            <img src={redux} alt="redux" className="iconoIMG" />
+            <img src={nodejs} alt="nodeJS" className="iconoIMG" />
+            <img src={express} alt="express" className="iconoIMG" />
+            <img
+              className="imglaptop"
+              ref={props.mov}
+              data-value="3"
+              src={logoPC}
+              alt=""
+            />
           </div>
         </div>
         <div className="sobre">
