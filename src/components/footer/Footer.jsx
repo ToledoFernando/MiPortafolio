@@ -7,7 +7,7 @@ import gmail from "../../../img/svg/gmail-svgrepo-com.svg";
 function Footer() {
   return (
     <div className="footer">
-      <span className="linea"></span>
+      <div className="linea"></div>
       <div className="inf">
         <p>
           <label>©2022 ftoledo.online</label> | Toledo Web Developer
